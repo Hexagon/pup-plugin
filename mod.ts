@@ -39,7 +39,7 @@ export class PluginImplementation {
     _apiToken: string,
   ) {}
   // Default implemetation of the cleanup function
-  public async cleanup() {
+  public async cleanup(): Promise<unknown> {
     return await false;
   }
 }
