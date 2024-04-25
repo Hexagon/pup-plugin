@@ -2,7 +2,7 @@
 
 **Purpose:**
 
-The cornerstone for developing custom Pup plugins.
+The cornerstone for developing custom Pup plugins. Full documentation on creating plugins are available at <https://pup.56k.guru/examples/plugins/readme/>
 
 **Usage**
 
@@ -16,7 +16,7 @@ deno add @pup/plugin @pup/api-client
 Then, extend the provided base classes and implement the necessary interfaces to
 define your plugin's specific functionality.
 
-**Example:**
+**Minimal example:**
 
 ```typescript
 import { PupPluginImplementation } from "@pup/plugin";
