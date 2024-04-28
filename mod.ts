@@ -38,7 +38,17 @@ export class PluginImplementation {
     _apiUrl: string,
     _apiToken: string,
   ) {}
-  // Default implemetation of the cleanup function
+  /**
+   * Pup will periodically send new api tokens
+   *
+   * Make sure to override this and receive the new tokens
+   */
+  public async refreshApiToken(_apiToken: string): Promise<unknown> {
+    return await false;
+  }
+  /**
+   * Default implemetation of the cleanup function
+   */
   public async cleanup(): Promise<unknown> {
     return await false;
   }
